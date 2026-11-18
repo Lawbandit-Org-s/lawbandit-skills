@@ -1,0 +1,25 @@
+T TORTS EXAM SHEET (sample: negligence)
+R ATTACK ORDER (every essay)
+| 1 | **Issue:** name each claim per plaintiff vs. each defendant ~list of claims~
+| 2 | **Rule:** elements in order; cite one case per element ~what P must prove~
+| 3 | **Analysis:** "Here, …" apply EACH element to facts; argue both sides ~who wins each element~
+| 4 | **Defenses / damages** ~what reduces or bars recovery~
+| 5 | **Conclusion:** likely outcome + weakest element ~answer~
+- **Traps:** don't skip an element because it's obvious (one line is enough); use facts, not rule restatement; name which jurisdiction rule (majority / minority).
+# NEGLIGENCE
+R ==NEGLIGENCE== = duty + breach + factual cause + proximate cause + damages
+| Duty | actor whose conduct creates a risk of physical harm owes ==reasonable care==; no general duty to rescue unless special relationship, undertaking, or actor created peril ~is there a duty?~
+| Here, | Did D's conduct create the risk? If not, is there an exception (relationship / undertaking / created peril)? Policy reason to limit duty?
+| Standard | ==reasonable person== under the circumstances; objective. Child: reasonable child of same age, unless adult activity. Physical disability counts; mental does not. Experts: reasonable expert ~what care was owed~
+| Breach | failed to act as reasonable person. Tools: ==B < P × L → negligent== (*Carroll Towing*); custom (evidence, not conclusive); statute (negligence per se); res ipsa ~did D fall short?~
+| Here, | Name B (precaution), P (likelihood), L (harm size) from facts; compare
+| Factual cause | ==but-for==: without D's breach, would harm have happened? Multiple sufficient causes → substantial factor ~did breach cause harm?~
+| Proximate cause | harm within the ==scope of the risk== that made conduct negligent; foreseeable type of harm and plaintiff ~is D responsible for this harm?~
+| Damages | actual harm required; compensatory (economic + non-economic) ~what P recovers~
+R DEFENSES
+| Comparative fault | P's share reduces recovery (pure vs. modified 50/51% bar) ~reduced award~
+| Assumption of risk | express (waiver) or primary (inherent risks of activity) ~may bar claim~
+R RES IPSA LOQUITUR
+| 1 | Accident normally doesn't happen without negligence ~inference of breach~
+| 2 | Instrument in D's exclusive control (relaxed for multiple Ds in some courts) ~points to D~
+| Here, | Unexplained injury + D controlled the thing → jury may infer breach

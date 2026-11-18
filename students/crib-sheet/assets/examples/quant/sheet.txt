@@ -1,0 +1,270 @@
+T INTRO IO ECONOMICS MIDTERM CRIB SHEET (sample)
+R ANY PROBLEM: THE 5 MOVES
+| 1 | **Label Given.** p = a − bQ: a = number alone, b = number on Q, c = MC. Q = A − BP? **Flip first:** p = A/B − Q/B.
+| 2 | **Write profit:** π = (p − c) × q. Put demand in for p (choosing q) or for q (choosing p).
+| 3 | **Derivative of YOUR choice = 0.** kx → k; kx² → 2kx; terms without your variable (rival's q or p) → 0.
+| 4 | **Solve, plug back:** chose q → p from DEMAND; chose p → q from demand.
+| 5 | **Profit = (p − c) × q** + one sentence of meaning.
+| Shortcut | = a formula skips steps 2–4. Write full steps first if time allows.
+R SYMBOLS @16
+| ε | elasticity = %ΔQ/%ΔP (negative); \|ε\| = size without minus
+| η | eta: size of elasticity in Q = D·P^(−η); ε = −η (read off exponent)
+| ∂ | partial derivative: change one variable, hold others fixed (∂π1/∂q1: only q1 moves, q2 is a number)
+| π, Δ, Σ | profit (not 3.14); change in; add up. d/dQ = derivative = slope
+| α, β, A | Cobb-Douglas exponents; A = productivity (TFP)
+| S(P), T | consumer surplus at price P; fixed fee
+| s_i, c̄ | firm i's market share; average rival cost
+| Marks | **yellow = equation / answer**; ~green = what a step gives you~
+- **Rival in YOUR profit:** price (Cournot) or your sales (Bertrand) depend on rival. **∂ of only YOUR variable:** you control only your own q or p. rival does its own derivative → two BRs → solve together.
+- **Traps:** AC ≠ FC/MC; Lerner ÷ P; flip Q = … demand; MC intercept ≠ FC; price from DEMAND, not MC; kink = add equations; in (a + c)/2, c is MC; IV needs relevance AND exogeneity.
+# W1 THE FIRM
+R MONOPOLY
+| Given | p = a − bQ, MC = c (a = number alone, b = number on Q)
+| 1 | Profit = revenue − cost: π = (a − bQ)·Q − c·Q ~profit using only Q~
+| 2 | Multiply out (a − bQ)·Q = aQ − bQ², so π = aQ − bQ² − cQ
+| 3 | Derivative wrt Q (aQ → a; bQ² → 2bQ; cQ → c), set = 0: a − 2bQ − c = 0. This is MR (a − 2bQ) = MC (c) ~MR = MC condition~
+| 4 | Move terms: a − c = 2bQ → divide by 2b: **Q\* = (a − c)/2b** ~profit-max quantity~
+| 5 | Plug Q\* into DEMAND: p\* = a − b·(a − c)/2b. b's cancel: p\* = a − (a − c)/2. Write a as 2a/2: p\* = (2a − a + c)/2 = **(a + c)/2** ~profit-max price~
+| 6 | Margin p\* − c = (a + c)/2 − c = (a − c)/2. Profit = margin × Q\* = (a − c)/2 × (a − c)/2b = **(a − c)²/4b** ~monopoly profit~
+| Qc | competitive Q (price = MC): a − bQ = c → **Qc = (a − c)/b** (= 2 × Q\*)
+| CS | triangle above p\*: ½ × Q\* × (a − p\*) = (a − c)²/8b
+| DWL | triangle from Q\* to Qc between p\* and c: ½ × (p\* − c) × (Qc − Q\*) = (a − c)²/8b
+| Shortcut | skip to Q\* = (a − c)/2b and p\* = (a + c)/2
+| Check | a 100, b 2, c 20: Q\* = 80/4 = 20; p\* = 120/2 = 60; π = 40·20 = 800; Qc 40; CS 400; DWL 400
+- **In words:** CS = what buyers would have paid minus what they paid, added up. PS = price minus MC on each unit = profit before fixed cost. DWL = value of trades worth making (WTP > MC) don't happen.
+- Statics: a↑ → p, Q↑; c↑ → p↑ by ½Δc, Q↓; b↑ → Q↓, p same.
+R COSTS / EFFICIENT SCALE
+| Given | total cost C(q) = FC + VC(q)
+| 1 | FC = C(0) = part with no q ~paid even at zero output~
+| 2 | **AC = C/q**: divide WHOLE cost by q (NOT FC/MC). AFC = FC/q; AVC = VC/q
+| 3 | **MC = dC/dq** (derivative of C) ~cost of one more unit~
+| 4 | Efficient scale: set MC = AC and solve ~q with lowest AC~
+| Check | C = 100 + 4q + q²: MC = 4 + 2q; AC = 100/q + 4 + q. Set equal: 4 + 2q = 100/q + 4 + q → q = 100/q → q² = 100 → q = 10; AC = 10 + 4 + 10 = 24
+R PRICE TAKER (competition)
+| Given | market price P (a fixed number), MC = m + nq, FC
+| 1 | Profit: π = P·q − C(q)
+| 2 | Derivative wrt q = 0: P − MC = 0 → **P = MC** ~produce until next unit costs price~
+| 3 | Solve P = m + nq: P − m = nq → **q\* = (P − m)/n** ~profit-max quantity~
+| 4 | **PS** = triangle between P and MC line: ½ × q\* × (P − m). m = cost of 1st unit, NOT FC ~producer surplus~
+| 5 | **Profit = PS − FC** ~profit~
+| Shut | short run: shut if P < min AVC; long run: exit if P < min AC
+| Check | MC 4 + 2q, P 30, FC 100: q\* = (30 − 4)/2 = 13; PS = ½·13·26 = 169; π = 169 − 100 = 69
+IMG mono.png ptaker.png
+- MC (above min AVC) = firm's supply curve. P changes → slide along MC; MC shifts only if variable cost changes (input price, unit tax), never FC. LR: P = min AC, π = 0.
+- Lower-MC firms earn more PS = **Ricardian rents**; lower-cost (more productive) firms are LARGER (or higher quality). Chandra et al. (2016): hospitals with better risk-adjusted outcomes are bigger and grow faster.
+- **Firm** = agent maximizing profit making a product. Corporation (limited liability, sells stock: ownership ≠ control); sole proprietorship (unlimited liability); partnership (law firms; LLC/LLP). Outcomes = **primitives** (demand, technology, factor prices) + interactions.
+- **Costs:** AFC always falls. AC falling = economies of scale. MC flat = replicate process (CRS); rising = capacity limits (DRS). Isoquants = technology, isocosts = factor prices → expansion path.
+- **Market power:** DWL = units with WTP > MC not made. More power ≠ more DWL: perfectly inelastic demand → no DWL (all surplus to producer). Rent-seeking can waste PS.
+# W2 ELASTICITY AND PRICING
+R ELASTICITY @30
+| Equation + point | 1) find dQ/dP (Q = A − BP → −B; p = a − bQ → −1/b). 2) **ε = (dQ/dP)(P/Q)**; P on top
+| Two points | (ΔQ/avg Q)/(ΔP/avg P)
+| P and MC | **L = (P − MC)/P** (÷ P!); \|ε\| = 1/L
+| \|ε\| and MC | (P − MC)/P = 1/\|ε\| → P − MC = P/\|ε\| → P(1 − 1/\|ε\|) = MC → **P = MC·\|ε\|/(\|ε\| − 1)**
+| ln Q = a − b ln P | ε = −b
+| Q = D·P^(−η) | ε = −η
+| Linear + MC | skip ε: use MONOPOLY steps
+R ELASTICITY RANGES (drop minus sign)
+| \|ε\| | Name | P +10% → | Revenue if P↑
+| 0 to 1 (e.g., 0.03) | inelastic | Q −0.3% | rises
+| = 1 | unit | Q −10% | max (MR = 0)
+| > 1 (e.g., 2) | elastic | Q −20% | falls
+- Monopolist always on **elastic** part (inelastic → raise P); stops at MR = MC, not \|ε\| = 1 (unless MC = 0). Ex Q = 120 − 2P, MC 20 → P 40, \|ε\| 2.
+- Ex \|ε\| 4, MC 30: (P − 30)/P = ¼ → P = 40. P 10, MC 8 → L 0.2 → \|ε\| 5. Margin = share of P; markup = multiple of MC.
+R PASS-THROUGH (Ofek)
+| 1 | Monopoly price (MONOPOLY step 5): p = (a + c)/2 ~old price~
+| 2 | Cost changes to c′: p′ = (a + c′)/2 ~new price~
+| 3 | Subtract: p′ − p = (c′ − c)/2 → **price moves by HALF cost change**
+| Check | p = 100 − 2Q, MC 20 → 30: p = 120/2 = 60 → 130/2 = 65
+| Others | competition 100%; Cournot N/(N + 1); constant elasticity > 100%; cost-plus over-passes
+- Dynamic pricing = prices change as demand/supply shift (scheduled, surge, markdowns): reprice to new optimum. Differentiation (market changed) ≠ discrimination (same market). Launch pricing = intertemporal discrimination.
+- **Dubé & Misra:** personalized pricing raised profit; total CS fell, but 60%+ paid less than best single price.
+R PD TYPES (in words) @20
+| 1st degree | "perfect": each buyer pays their own WTP (or two-part tariff: P = MC, fee = their CS). Firm takes all surplus; no DWL
+| 2nd degree | firm CAN'T tell types apart → offers a menu (quantity/quality/price) and buyers self-select. Needs IR + IC
+| 3rd degree | firm sees group (students, seniors, regions) ~different price per group~
+| Needs | market power + no resale + a way to sort buyers
+R 3RD DEGREE: SEPARATE PRICES
+| Given | demand for each group (q_H = …, q_L = …), MC c
+| 1 | Flip each to p = a_i − b_i q_i ~each group's own a and b~
+| 2 | Do MONOPOLY steps for each group separately → q_i = (a_i − c)/2b_i ~each group's quantity~
+| 3 | Price for each group from ITS demand: p_i = a_i − b_i q_i ~less elastic group pays more~
+| 4 | Total profit = Σ (p_i − c)·q_i ~total profit~
+| Check | q_H = 100 − p, q_L = 60 − p, c 20: H: q = 80/2 = 40, p = 60; L: q = 40/2 = 20, p = 40; π = 40·40 + 20·20 = 2,000
+R 3RD DEGREE: ONE PRICE (KINK)
+| Given | q_H = 100 − p, q_L = 60 − p, MC 20; one price for both
+| 1 | Kink price = where LOW group stops buying: set q_L = 0 → 60 − p = 0 → p = 60 ~kink price~
+| 2 | Kink quantity: plug p into q_H → 100 − 60 = 40 ~corner at (Q 40, p 60)~
+| 3 | Above kink only H buys → demand p = 100 − Q ~upper demand piece~
+| 4 | Below it both buy → ADD equations: Q = (100 − p) + (60 − p) = 160 − 2p → flip: p = 80 − Q/2 ~lower demand piece~
+| 5 | MR = MC on each piece. Upper: 100 − 2Q = 20 → Q 40, p 60, π = 40·40 = 1,600. Lower: 80 − Q = 20 → Q 60, p = 80 − 30 = 50, π = 30·60 = 1,800
+| 6 | Keep a piece's answer only if its Q is on piece (upper ≤ 40, lower ≥ 40); pick higher π → one price of 50 ~single best price~
+IMG elast.png kink.png
+- "100 − 60" works only when both slopes = 1. **WELFARE RULE: third-degree discrimination raises total welfare only if it raises total output, e.g., by serving a group a single price would have priced out.** Same output → welfare falls.
+- **Why nonuniform pricing:** uniform pricing leaves CS + DWL; nonlinear pricing sells units a single price wouldn't → can raise welfare AND profit.
+R TWO-PART TARIFF
+| Given | identical buyers, each with demand p = a − bq, MC c
+| 1 | Per-unit price = **c** ~buyers take every unit worth more than it costs~
+| 2 | Quantity at price: a − bq = c → q = (a − c)/b ~each buyer's quantity~
+| 3 | Fee = buyer's CS at price = triangle ½ × q × (a − c) = ½ × (a − c)/b × (a − c) = **(a − c)²/2b** ~fixed fee~
+| 4 | Profit = fee × number of buyers (units sold at cost earn 0) ~total profit~
+| Check | q = 20 − p (a 20, b 1), c 4: q = 16; fee = ½·16·16 = 128 per buyer (vs 64 with one best price)
+| Types known | price = c for all; fee = each buyer's own CS (1st-degree): all surplus, no DWL
+R 2ND DEGREE: THE 4 CONDITIONS (menu / versions) @15
+| Idea | firm CAN'T tell buyers apart → offers a menu (e.g., basic and premium) and lets each type pick. Prices must make each type (a) willing to buy and (b) pick version meant for it
+| Surplus | what a buyer gets from a version = **their value of it − its price** (in utility form: U(D, P), D = quality)
+| IR low | **"Will buy" (participation):** low type's value of basic − basic price ≥ 0. Utility form: U_L(D_L, P_L) ≥ 0
+| IR high | high type's value of premium − premium price ≥ 0. Utility form: U_H(D_H, P_H) ≥ 0
+| IC low | **"Won't switch" (incentive compatibility):** low's value of basic − basic price ≥ low's value of premium − premium price. U_L(D_L, P_L) ≥ U_L(D_H, P_H)
+| IC high | high's value of premium − premium price ≥ high's value of basic − basic price. U_H(D_H, P_H) ≥ U_H(D_L, P_L)
+| 1 | **Low IR with "=":** basic price = low's value of basic (low keeps nothing) ~low type's (basic) price~
+| 2 | **High IC with "=":** premium price = high's value of premium − (high's value of basic − basic price). part in parentheses = what high must be left (**information rent**) ~high type's (premium) price~
+| 3 | Check other two hold (">")
+| 4 | Profit = (# low × basic price) + (# high × premium price) − costs. Compare with selling only premium to high types at their full value (drop low types); keep bigger ~best menu vs. dropping low types~
+| Example | Low (100 buyers): basic 30, premium 40. High (50): basic 50, premium 100. MC 0. IR low: 30 − P_B ≥ 0 → **P_B = 30**. IC high: 100 − P_P ≥ 50 − 30 = 20 → **P_P = 80**. Check IR high: 100 − 80 = 20 ≥ 0 ✓. IC low: 30 − 30 = 0 ≥ 40 − 80 = −40 ✓. π = 100·30 + 50·80 = 7,000 > 5,000 (premium only). If only 10 low: 4,300 < 5,000 ~drop low~
+| Result | high type: efficient quality + keeps some surplus; low type: quality cut + zero surplus. If types are "Group 1 / Group 2" with U(D, P): same four; "high" = group values quality more
+R 2ND DEGREE WITH TWO-PART TARIFFS
+| Setup | (T1, P1) for low, (T2, P2) for high; S(P) = CS at P
+| R1–2 | firm can't take all surplus from both types, and won't leave surplus to both
+| R3 | **Low: T1 = S1(P1)** (zero surplus). **High: T2 = T1 + S2(P2) − S2(P1)** (keeps info rent)
+| R4 | **P2 = C**: high type gets efficient Q (no distortion at top)
+| R5 | **P1 = C + [Q2(P1) − Q1(P1)]/(−Q1′(P1)) > C**: low type under-served
+| Quality | same logic: high gets efficient quality + surplus; low too-low quality, zero surplus
+R BLOCK PRICING
+| Idea | lower price on each extra block; grabs more area under demand; block price ≥ MC
+| Example | one price $500 sells 1,000 hrs ($500k); also sell next 500 hrs at $350 and next 500 at $200 → +$275k
+R BUNDLING
+| 1 | Each good: try each buyer's value as price; profit = P × # with value ≥ P; keep best
+| 2 | Bundle: each buyer's sum; try each sum as price; keep best
+| 3 | Compare totals
+| Example | values (good 1, good 2): A (2, 6), B (4, 4), C (6, 2), MC 0: 6/6 → 12; 4/4 → 16; 2/2 → 12; **bundle 8 → 24**
+| Why | **negatively correlated** values: less spread in bundle WTP
+| Pure / mixed | only bundle / bundle + separates (keeps one-good buyers)
+| Tying | competitive outside good, no correlation → don't; complement ~tie extracts more~
+# W3 ESTIMATION
+R "WHY IS THIS DEMAND ESTIMATE WRONG?"
+| Problem | **Simultaneity:** observed (P, Q) are crossings of shifting curves; demand shifts trace supply
+| Write | "P is correlated with unobserved demand shocks (firms raise P when demand is high), so OLS is biased toward zero: too inelastic (−4 looks −2), even upward-sloping. It doesn't trace demand."
+| Fix 1 | control for demand shifters (market fixed effects): must catch ALL
+| Fix 2 | **instrument = supply/cost shifter**
+| IV | ε ≈ (%ΔQ from Z)/(%ΔP from Z). e.g., a supply shock moves Q −2.6% and P +14.3% → ε ≈ −0.18
+IMG simult.png
+R "IS X A GOOD INSTRUMENT?" @22
+| 1 Relevance | does X move cost → P? **Testable** (first stage; sign must fit)
+| 2 Exogeneity | could X also shift demand? Name a channel. **Untestable**
+| 3 Verdict | good / bad / depends on…
+| Good | aluminum → planes; Brazil frost → coffee
+| Bad | oil → gas (booms move both; IV slope +); refinery utilization (wrong first-stage sign); advertising (demand shifter); local wages (tied to income)
+- **Primitives:** supply = production function f(K, L) or f(K, L, M) (M = materials); demand = utility, never observed → estimate demand systems Q_i(P_i, P_−i). To estimate SUPPLY, use a DEMAND shifter (weather → ice cream). Price experiments: clean, may anger customers, short-run ε.
+R COBB-DOUGLAS: Q = A·K^α·L^β
+| 1 | Output: plug in K, L (power 0.5 = square root)
+| 2 | Logs: **ln Q = ln A + α ln K + β ln L** (regression coefficients = α, β; intercept = ln A)
+| 3 | 1% more L → β% more Q (α for K)
+| 4 | Returns to scale **α + β**: = 1 CRS, > 1 IRS, < 1 DRS; double all inputs → Q × 2^(α+β)
+| 5 | TFP: A = Q/(K^α L^β); β < 1 ~diminishing returns to L~
+| Check | 2K^{0.5}L^{0.5}, K 16, L 25 → 2·4·5 = 40; double → 80; rival makes 60 → A 3
+| Regression | ln Q = 0.7 + 0.4 ln K + 0.7 ln L → α .4, β .7, RTS 1.1 (IRS)
+- **TRANSMISSION BIAS (write):** "Firms know productivity A when choosing inputs, so productive firms use more K and L. Inputs correlate with A in the error, so OLS credits inputs for productivity → biased α, β. Fixes: input variation unrelated to productivity (factor prices), a productivity proxy, or theory instead of regression."
+R LOG REGRESSIONS
+| log-log | ln Q = a + b ln P: **b = ε** (1% ↑P → b% Q)
+| log-level | ln Q = a + bP: $1 ↑P → 100b% Q; ε = bP
+| level-log | Q = a + b ln P: 1% ↑P → b/100 units; ε = b/Q
+| dummy | % effect = e^b − 1 (≈ b)
+| Price it | ln Q = 8 − 1.5 ln P, MC 6: (P − 6)/P = 1/1.5 → P 18
+- Rules: ln(ab) = ln a + ln b; ln(a^k) = k ln a; Δln ≈ %Δ. \|ε\| < 1 estimated → raise P, or estimate is biased.
+# W4 GAMES AND OLIGOPOLY
+R MATRIX GAME (simultaneous)
+| 1 | Each column: underline P1's best payoff
+| 2 | Each row: underline P2's best payoff
+| 3 | Both underlined = **Nash eq.** (can be 0, 1, 2+) ~Nash equilibrium~
+| Dominant | best whatever other does; cross out dominated, repeat
+| Note | a game can have one NE (e.g., both play a dominant strategy) or several (e.g., each wants to pick a different option from other)
+R MATRIX EXAMPLE (row player's payoff first)
+| Row \ Col | Left | Right
+| Up | 15, 15 | 30, **70**
+| Down | **70**, 30 | **35, 35** ← NE (both underlined)
+R GAME TREE (sequential)
+| 1 | Solve **last mover** first
+| 2 | Replace node with its choice; move up ~equilibrium path~
+| Example | entrant moves first; if it enters, incumbent compares fight (−100) vs accommodate (+100) → accommodates → entrant enters. If incumbent can commit to fight BEFORE entry ~entrant stays out~
+- **Simultaneous** = choose without seeing other's move (matrix). **Sequential** = later movers see earlier moves (tree). **Dominant** = best no matter what others do; **dominated** = always worse than another option.
+- NE = mutual best responses = no profitable unilateral deviation. Commitment has value only if binding; a threat to fight after entry isn't credible.
+- **Substitutes** (Cournot: rival does more → you do less); **complements** (Bertrand: rival raises p → you raise p).
+R COURNOT: p = a − b(q1 + q2), costs c1, c2
+| 1 | Firm 1 profit = (price − c1)·q1 with price = a − b(q1 + q2): π1 = [a − bq1 − bq2 − c1]·q1 (q2 is in it: price depends on TOTAL output) ~firm 1's profit~
+| 2 | Multiply out: π1 = aq1 − bq1² − bq1q2 − c1q1
+| 3 | Derivative wrt q1 ONLY (q2 = a fixed number): aq1 → a; bq1² → 2bq1; bq1q2 → bq2; c1q1 → c1. Set = 0: a − 2bq1 − bq2 − c1 = 0 ~first-order condition~
+| 4 | Solve for q1: 2bq1 = a − c1 − bq2 → **BR1: q1 = (a − c1 − bq2)/2b** ~firm 1's best q for any q2~. Firm 2 mirrors: BR2: q2 = (a − c2 − bq1)/2b
+| 5a | Same cost → same q. Put q1 = q2 = q into BR1: q = (a − c − bq)/2b. × 2b: 2bq = a − c − bq. + bq: 3bq = a − c → **q = (a − c)/3b** each ~equilibrium quantity (each firm)~
+| 5b | Different costs: replace q2 in BR1 with BR2; multiply out; gather q1 terms; solve → q1; then q2 from BR2 ~equilibrium quantities~
+| 6 | Price: plug q1 + q2 into demand p = a − b(q1 + q2) ~market price~
+| 7 | Profit for each: πi = (p − ci)·qi ~each firm's profit~
+| Shortcut | q1 = (a + c2 − 2c1)/3b; p = (a + c1 + c2)/3 [= (a + 2c)/3 if same]; π1 = (a + c2 − 2c1)²/9b
+| Check | a 100, b 1, c 10: BR q1 = (90 − q2)/2; same q → 2q = 90 − q → q 30; p = 100 − 60 = 40; π = 30·30 = 900. If c2 = 40: BR2 q2 = (60 − q1)/2 → q1 40, q2 10, p 50, π 1,600 / 100
+R COURNOT → MONOPOLY / N FIRMS
+| Merge 1 | firms act as one: replace q1 + q2 with Q → p = a − bQ
+| Merge 2 | MONOPOLY steps → Q = (a − c)/2b, p = (a + c)/2, π = (a − c)²/4b (split π if 50/50)
+| Compare | vs Cournot: total Q 2(a − c)/3b is MORE, p is LOWER, total π 2(a − c)²/9b is LESS
+| Cheat | if rival makes half monopoly Q, plug it into your BR → your best q is bigger → each wants to cheat → collusion breaks (a 100, b 1, c 10: rival 22.5 → your BR (90 − 22.5)/2 = 33.75)
+| N firms | same steps with N equal firms. **Shortcut:** each q = (a − c)/((N + 1)b); p = (a + Nc)/(N + 1) → falls toward c as N grows; each π = (a − c)²/((N + 1)²b); CS = N²(a − c)²/(2b(N + 1)²)
+- Own c↑ → own q↓, rival q↑, p↑; a↑ → both q↑; steeper b → less responsive. Real world: commodities; Kreps–Scheinkman (capacity then price = Cournot).
+R STACKELBERG (firm 1 leads, commits)
+| 1 | Follower's BR (same as Cournot step 4): **q2 = (a − c2 − bq1)/2b** ~how follower reacts to any q1~
+| 2 | Put q2 into price: p = a − bq1 − b·(a − c2 − bq1)/2b. b's cancel: p = a − bq1 − (a − c2 − bq1)/2 = a − bq1 − a/2 + c2/2 + bq1/2 = **(a + c2)/2 − bq1/2** ~price using only leader's q1~
+| 3 | Leader profit = (price − c1)·q1 = [(a + c2)/2 − c1]·q1 − (b/2)·q1² ~leader's profit~
+| 4 | Derivative wrt q1 = 0: (a + c2)/2 − c1 − bq1 = 0 → bq1 = (a + c2 − 2c1)/2 → **q1 = (a + c2 − 2c1)/2b** ~leader's quantity~
+| 5 | Plug q1 into follower's BR → q2. Then p = a − b(q1 + q2). Profits πi = (p − ci)·qi ~follower's quantity, price, profits~
+| Shortcut | same c: q1 = (a − c)/2b (monopoly Q), q2 = (a − c)/4b, p = (a + 3c)/4, π1 = (a − c)²/8b, π2 = (a − c)²/16b
+| Check | a 100, b 1, c 10: BR q2 = 45 − q1/2; p = 100 − q1 − 45 + q1/2 = 55 − q1/2; π1 = (45 − q1/2)q1 → derivative 45 − q1 = 0 → q1 45, q2 22.5, p 32.5, π 1,012.5 / 506.25
+| Deter 1 | follower makes 0 when its BR ≤ 0: a − c2 − bq1 ≤ 0 → **q1 ≥ (a − c2)/b** ~price falls to follower's MC~
+| Deter 2 | follower's best profit = (a − c2 − bq1)²/4b, never below 0: with constant MC and **no fixed cost it can't lose money** (it can make 0). It loses money only with a fixed/sunk cost F: need (a − c2 − bq1)²/4b < F
+| Deter 3 | leader must credibly commit to big q1, and it costs leader profit
+- Leader > Cournot > follower; needs commitment (else back to Cournot).
+R BERTRAND, IDENTICAL PRODUCTS (no derivative: profit jumps)
+| 1 | Rule: everyone buys from cheapest; a tie splits 50/50
+| 2 | Same c: any p > c gets undercut → **p = c, π = 0**
+| 3 | c1 < c2: firm 1 prices just under c2 → **p = c2**; sells D(c2); **π1 = D(c2)(c2 − c1)**; π2 = 0
+| Caveat | if firm 1's monopoly price (a + c1)/2 < c2 → charge (a + c1)/2
+| N firms | p = 2nd-lowest cost
+| Check | Q = 100 − p, c 10 / 40: p 40, q 60, π1 1,800
+R BERTRAND, DIFFERENTIATED: q1 = d − 2p1 + p2
+| 1 | Firm 1 profit = (p1 − c1) × q1: π1 = (p1 − c1)(d − 2p1 + p2) (p2 is in it: customers switch) ~firm 1's profit~
+| 2 | Multiply each term by each term: π1 = dp1 − 2p1² + p1p2 − c1d + 2c1p1 − c1p2
+| 3 | Derivative wrt p1 ONLY (p2 = number): dp1 → d; 2p1² → 4p1; p1p2 → p2; c1d → 0; 2c1p1 → 2c1; c1p2 → 0. Set = 0: d − 4p1 + p2 + 2c1 = 0 ~first-order condition~
+| 4 | Solve: 4p1 = d + p2 + 2c1 → **BR1: p1 = (d + p2 + 2c1)/4** ~firm 1's best price for any p2~. Mirror: BR2: p2 = (d + p1 + 2c2)/4
+| 5a | Same cost → same p: p = (d + p + 2c)/4 → 4p = d + p + 2c → 3p = d + 2c → **p = (d + 2c)/3** ~equilibrium price (each firm)~
+| 5b | Different costs: replace p2 in BR1 with BR2; × 4 twice: 16p1 = 5d + p1 + 2c2 + 8c1 → 15p1 = 5d + 2c2 + 8c1 → p1; then p2 from BR2 ~equilibrium prices~
+| 6 | Quantity: plug both prices into demand q1 = d − 2p1 + p2 ~each firm's quantity~
+| 7 | Profit: π1 = (p1 − c1)·q1 ~each firm's profit~
+| Shortcut | p1 = d/3 + (2/15)c2 + (8/15)c1; π1 = 2(d/3 + 2c2/15 − 7c1/15)². Any demand: derivative = q + (p − c) × slope of own demand
+| N firms | **Shortcut:** p_i = d/3 + c̄/6 + c_i/2 (only average rival cost matters, not N)
+| Check | d 40, c 10: BR p1 = (60 + p2)/4; same p → 4p = 60 + p → p 20; q = 40 − 40 + 20 = 20; π = 10·20 = 200
+IMG cournot.png bertrand.png
+# W5 MERGERS
+R MERGED FIRM PRICES (differentiated)
+| Why | when p1 rises, some lost customers go to product 2, which merged firm also owns → **recaptured** ~higher prices~
+| Numbers | q = 40 − 2p_own + p_other, c 10; both at 20 (q 20 each, π 200 each). Raise p1 to 21: q1 18, q2 21. Alone: 11·18 = 198 < 200 (don't). Merged: 198 + 10·21 = 408 > 400 (do)
+| 1 | Profit on BOTH products: π = (p1 − c)(d − 2p1 + p2) + (p2 − c)(d − 2p2 + p1) ~merged firm's profit~
+| 2 | Derivative wrt p1 = 0. Product 1 part (as Bertrand): (d − 2p1 + p2) − 2(p1 − c). Product 2 part: + (p2 − c) (1 extra customer × its margin). Sum = 0 ~merged first-order condition~
+| 3 | Same c, p1 = p2 = p: d − 2p + p − 2p + 2c + p − c = 0 → d − 2p + c = 0 → **p = (d + c)/2** → above competing (d + 2c)/3 ~merged price~
+| 4 | Quantity from demand; profit = sum over both products ~merged quantities and profit~
+| Check | d 40, c 10: p 20 → 25; q = 40 − 50 + 25 = 15; total π = 2·15·15 = 450 (was 400)
+R EFFICIENCIES: HOW BIG?
+| 1 | Merger cuts cost to c − Δc → merged price = (d + c − Δc)/2 ~merged price with lower cost~
+| 2 | Consumers no worse off if ≤ competing price (d + 2c)/3
+| 3 | Solve: × 6 both sides: 3d + 3c − 3Δc ≤ 2d + 4c → d − c ≤ 3Δc → **Δc ≥ (d − c)/3** ~minimum cost saving~
+| Check | d 40, c 10 → Δc ≥ 10: cost must fall from 10 to 0
+- Williamson trade-off: DWL from market power vs cost-saving rectangle. Consumers gain only if P falls.
+R COURNOT MERGER (N → N − 1 firms, no efficiency)
+| 1 | Before: N-firm Cournot → p = (a + Nc)/(N + 1); each π = (a − c)²/((N + 1)²b) ~pre-merger price and profits~
+| 2 | After: same formulas with N − 1 firms (pair is now one firm) ~post-merger price and profits~
+| 3 | Compare: pair = 2 × old π vs 1 × new π; outsider = old π vs new π; price old vs new
+| Result | price rises; **merging pair LOSES (merger paradox)**; outsiders gain; CS falls
+| Check | a 100, b 1, c 10. N 3: p = 130/4 = 32.5, π = 90²/16 = 506.25. N 2: p = 120/3 = 40, π = 90²/9 = 900. Pair 1,012.5 → 900; outsider 506.25 → 900
+- Not general: a differentiated Bertrand merger IS profitable. Merged-firm efficiencies cut outsiders' gains.
+R HHI SCREEN
+| 1 | **HHI = Σ s_i²** (shares as whole %); max 10,000; N equal firms → 10,000/N
+| 2 | ΔHHI = new − old (**shortcut:** 2·s1·s2)
+| 3 | Presumed bad if HHI > 1,800 **and** Δ > 100, **or** merged share > 30%
+| Check | 40/30/20/10 → 3,000; merge 20 + 10 → 3,400 (Δ 400) → presumed.
+- **MillerCoors (Ashenfelter et al.):** brewing in each other's plants cut shipping cost → lower MC, offsetting price effect. **Wollmann:** deals below HSR threshold escape review → stealth consolidation; 2023 guidelines can review a series of deals. **Waves:** one merger changes next one's payoff; shrinking markets. Nocke–Whinston: myopic CS rule can be optimal. **Entry** can undo price increases; contestability rare; Starc & Wollmann: potential entry disciplines collusion.
