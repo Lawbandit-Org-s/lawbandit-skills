@@ -36,7 +36,7 @@ Each skill folder has its own `README.md` with details and any tools it needs.
 
 ## Members-only skills
 
-Lawbandit members get access to additional skills. Visit [lawbandit.com](https://www.lawbandit.com) to learn more.
+Lawbandit members get access to additional skills.
 
 ## License
 
