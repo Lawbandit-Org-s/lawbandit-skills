@@ -1,0 +1,46 @@
+name: Build skill zips
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip every skill
+        run: |
+          mkdir -p dist
+          for aud in students professors attorneys; do
+            [ -d "$aud" ] || continue
+            for dir in "$aud"/*/; do
+              name=$(basename "$dir")
+              [ -f "$dir/SKILL.md" ] || continue
+              if [ -f "dist/$name.zip" ]; then
+                echo "Duplicate skill name: $name" && exit 1
+              fi
+              (cd "$aud" && zip -rq "../dist/$name.zip" "$name" -x "*/.DS_Store" "*/__MACOSX/*" "*/node_modules/*")
+            done
+          done
+          ls -la dist
+
+      - name: Publish "latest" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! ls dist/*.zip >/dev/null 2>&1; then
+            echo "No skills yet, nothing to release."
+            gh release delete latest --cleanup-tag -y || true
+            exit 0
+          fi
+          gh release delete latest --cleanup-tag -y || true
+          gh release create latest dist/*.zip \
+            --title "Latest skills" \
+            --notes "Auto-built zips of every skill in this repository." \
+            --target "$GITHUB_SHA"
