@@ -6,6 +6,8 @@ A skill is a folder of instructions and tools that teaches Claude how to do a sp
 
 ## Skill catalog
 
+<!-- CATALOG:START -->
+
 ### Students
 
 | Skill | What it does | Download |
@@ -19,6 +21,8 @@ Coming soon.
 ### Attorneys
 
 Coming soon.
+
+<!-- CATALOG:END -->
 
 ## How to install a skill
 
