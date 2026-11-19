@@ -14,6 +14,47 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check site/<skill>.json matches skills
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          fail=0
+          declare -A have_skill=()
+          skills=()
+
+          # A skill = a folder with SKILL.md. Ignore site/, assets/ and scripts/
+          # so a SKILL.md nested inside a skill's files is not counted as a skill.
+          while IFS= read -r f; do
+            name="$(basename "$(dirname "$f")")"
+            skills+=("$name")
+            have_skill["$name"]=1
+          done < <(find . -name SKILL.md \
+            -not -path './.git/*' -not -path './site/*' \
+            -not -path '*/node_modules/*' \
+            -not -path '*/assets/*' -not -path '*/scripts/*' | sort)
+
+          # Missing page: warning only. Must not block the release or the zips.
+          for s in "${skills[@]}"; do
+            if [ ! -f "site/$s.json" ]; then
+              echo "::warning file=site/$s.json::Skill '$s' has no site/$s.json (page will be missing)"
+            fi
+          done
+
+          # Orphan or invalid site file: error.
+          for j in site/*.json; do
+            n="$(basename "$j" .json)"
+            if [ -z "${have_skill[$n]:-}" ]; then
+              echo "::error file=$j::$j has no skill named '$n'"
+              fail=1
+            fi
+            if ! python3 -c 'import json,sys; json.load(open(sys.argv[1]))' "$j"; then
+              echo "::error file=$j::$j is not valid JSON"
+              fail=1
+            fi
+          done
+          exit $fail
+
       - name: Zip every skill
         run: |
           mkdir -p dist
@@ -29,6 +70,26 @@ jobs:
             done
           done
           ls -la dist
+
+      - name: Verify zips contain no site/
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          zips=(dist/*.zip)
+          if [ "${#zips[@]}" -eq 0 ]; then
+            echo "No zips to verify (no skills yet)."
+            exit 0
+          fi
+          bad=0
+          for z in "${zips[@]}"; do
+            listing="$(unzip -Z1 "$z")"
+            if grep -Eq '(^|/)site(/|$)' <<<"$listing"; then
+              echo "::error::$z contains site/"
+              bad=1
+            fi
+          done
+          exit $bad
 
       - name: Publish "latest" release
         env:
