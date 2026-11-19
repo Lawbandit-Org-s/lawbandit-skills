@@ -1,0 +1,37 @@
+{
+  "title": "Crib Sheet",
+  "audience": "students",
+  "tagline": "Turn your outline into an exam note sheet that fills exactly the number of pages your professor allows.",
+  "summary": "Builds a dense Word file for exams where you can bring notes: landscape, narrow columns, cut to your page limit and filled to the bottom of the last column. It asks about your exam and how you like information laid out before it writes anything. For law classes it builds rule blocks; for calculation classes it builds step-by-step recipes.",
+  "updated": "2026-11-19",
+  "whatItDoes": [
+    "Ask about your exam first: class, format, page limit, paper size, open book or not, and how dense you want the text.",
+    "Build rule blocks for law: an attack order, then one table per doctrine with elements, \"Here,\" analysis prompts, key cases in italics, defenses and traps.",
+    "Build recipe tables for calculation classes: given, numbered steps, a labeled shortcut, and a worked check with made-up numbers.",
+    "Fit the page limit by building, measuring and trimming until the last column is nearly full, then check the result by eye.",
+    "Mark key terms in yellow and add a green label to each element saying what it gives you, so you can find the right rule in seconds."
+  ],
+  "whenToUse": "Use it when you can bring a note sheet to an exam and need your outline cut to a set number of pages, or when you want to shrink, refit or add to a sheet you already have. Check your course's AI and honor-code rules first: graded problem sets and take-home exams should not be fed to it.",
+  "pairsWith": [],
+  "examplePrompts": [
+    "Make a crib sheet for my Torts final. One page, one side, covering negligence and strict liability.",
+    "Condense my Contracts outline into a 2-page attack sheet, 5 columns, case names only.",
+    "Here is my Evidence cheat sheet. It is 1.3 pages and the limit is 1. Cut it to fit.",
+    "Build a formula sheet for my Statistics midterm, weeks 1 to 6, with a worked check for each problem type."
+  ],
+  "whatChanged": "Without the skill, Claude writes loose text with no control over length, so it runs past your page limit and you cut it by hand. With the skill, Claude builds the Word file, measures it against the limit, and trims until it fits, using a fixed layout where every element has its test, a \"Here,\" prompt and its key cases.",
+  "demo": {
+    "type": "text-compare",
+    "prompt": "Make me a 1-page crib sheet for my Torts exam on negligence.",
+    "before": {
+      "label": "Without the skill",
+      "caption": "Illustrative example: loose paragraphs with no structure and no way to control the page count.",
+      "content": "Negligence is the most common tort. To win, the plaintiff has to prove four or five things: that the defendant owed a duty of care, that the defendant breached that duty, that the breach caused the harm, and that the plaintiff suffered damages. Duty is usually based on the idea that people must act like a reasonable person under the circumstances. There is generally no duty to rescue someone, but there are exceptions, for example when there is a special relationship or when the defendant created the danger. Breach can be shown in a few ways. One is the Learned Hand formula from United States v. Carroll Towing, which asks whether the burden of precautions is less than the probability of harm times the gravity of the harm. Custom can also be evidence, and a statute violation can be negligence per se. Causation has two parts. Factual cause is usually the but-for test, and when there are multiple sufficient causes courts use the substantial factor test. Proximate cause asks whether the harm was a foreseeable result of the risk. Damages must be actual and can include economic and non-economic losses. Defenses include comparative fault, which reduces recovery, and assumption of risk. Res ipsa loquitur lets a jury infer breach when ..."
+    },
+    "after": {
+      "label": "With the skill",
+      "caption": "A fragment of the negligence sample sheet: one row per element, a \"Here,\" prompt for the facts, and a case only where it helps.",
+      "content": "R ==NEGLIGENCE== = duty + breach + factual cause + proximate cause + damages\n| Duty | actor whose conduct creates a risk of physical harm owes ==reasonable care==; no general duty to rescue unless special relationship, undertaking, or actor created peril ~is there a duty?~\n| Here, | Did D's conduct create the risk? If not, is there an exception (relationship / undertaking / created peril)? Policy reason to limit duty?\n| Standard | ==reasonable person== under the circumstances; objective. Child: reasonable child of same age, unless adult activity. Physical disability counts; mental does not. Experts: reasonable expert ~what care was owed~\n| Breach | failed to act as reasonable person. Tools: ==B < P × L → negligent== (*Carroll Towing*); custom (evidence, not conclusive); statute (negligence per se); res ipsa ~did D fall short?~\n| Here, | Name B (precaution), P (likelihood), L (harm size) from facts; compare\n| Factual cause | ==but-for==: without D's breach, would harm have happened? Multiple sufficient causes → substantial factor ~did breach cause harm?~\n| Proximate cause | harm within the ==scope of the risk== that made conduct negligent; foreseeable type of harm and plaintiff ~is D responsible for this harm?~\n| Damages | actual harm required; compensatory (economic + non-economic) ~what P recovers~"
+    }
+  }
+}
