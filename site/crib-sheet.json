@@ -1,9 +1,9 @@
 {
-  "title": "Crib Sheet",
+  "title": "Crib Sheet4",
   "audience": "students",
   "tagline": "Turn your outline into an exam note sheet that fills exactly the number of pages your professor allows.",
   "summary": "Builds a dense Word file for exams where you can bring notes: landscape, narrow columns, cut to your page limit and filled to the bottom of the last column. It asks about your exam and how you like information laid out before it writes anything. For law classes it builds rule blocks; for calculation classes it builds step-by-step recipes.",
-  "updated": "2026-11-19",
+  "updated": "2026-11-26",
   "whatItDoes": [
     "Ask about your exam first: class, format, page limit, paper size, open book or not, and how dense you want the text.",
     "Build rule blocks for law: an attack order, then one table per doctrine with elements, \"Here,\" analysis prompts, key cases in italics, defenses and traps.",
