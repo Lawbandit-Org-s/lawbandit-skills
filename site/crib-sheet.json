@@ -1,5 +1,5 @@
 {
-  "title": "Crib Sheet4",
+  "title": "Crib Sheet",
   "audience": "students",
   "tagline": "Turn your outline into an exam note sheet that fills exactly the number of pages your professor allows.",
   "summary": "Builds a dense Word file for exams where you can bring notes: landscape, narrow columns, cut to your page limit and filled to the bottom of the last column. It asks about your exam and how you like information laid out before it writes anything. For law classes it builds rule blocks; for calculation classes it builds step-by-step recipes.",
